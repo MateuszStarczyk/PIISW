@@ -244,3 +244,5 @@ Technically, a copy of `index.html` is created: first the file is filtered and c
 New paragraph
 
 New change on branch
+
+Change on master
