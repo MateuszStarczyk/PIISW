@@ -244,3 +244,5 @@ Change on master
 Technically, a copy of `index.html` is created: first the file is filtered and copied to `target/client` and then copied to `src/main/client/dist` overwriting the previous version.
 
 New paragraph
+
+New change on branch
