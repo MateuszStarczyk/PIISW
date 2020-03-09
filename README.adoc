@@ -177,6 +177,8 @@ In order to display in the page the current application version and build time, 
 
 For this to work, we used https://maven.apache.org/plugins/maven-resources-plugin/index.html[maven-resources-plugin] to filter `src/main/client/dist/index.html` (the plugin uses http://maven.apache.org/shared/maven-filtering/[Maven Filtering] for filtering resources). The following configuration was added to our `jsclient` profile (`pom.xml`):
 
+Change on master
+
 [source, xml]
 ....
 ...
@@ -244,5 +246,3 @@ Technically, a copy of `index.html` is created: first the file is filtered and c
 New paragraph
 
 New change on branch
-
-Change on master
