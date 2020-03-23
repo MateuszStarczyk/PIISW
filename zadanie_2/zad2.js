@@ -1,9 +1,8 @@
 var sum = 0;
 for (var i = 0; i < arguments.length; ++i) {
-    sum += +arguments[i];
+    if (arguments[i] % 2)
+        sum += +arguments[i] + 1;
+    else
+        sum += +arguments[i] - 1;
 }
-if (i % 2)
-    sum++;
-else
-    sum--;
 print(sum);
