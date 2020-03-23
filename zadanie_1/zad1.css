@@ -20,38 +20,21 @@ li {
     line-height: 50px;
     border: black 1px inset;
 }
-
-li:nth-child(-n + 3) {
+li:nth-child(odd) {
     float: left;
     clear: right;
 }
 
-li:nth-child(n + 4) {
+li:nth-child(even) {
     float: right;
 }
 
-li:nth-child(n + 7) {
-    float: left;
-    clear: right;
-}
-
-li:nth-child(n + 8) {
+li:nth-child(5), li:nth-child(9)  {
     float: right;
     clear: none;
 }
-
-li:nth-child(n + 10) {
+li:nth-child(2), li:nth-child(10) {
     float: left;
-    clear: none;
-}
-
-li:nth-child(n + 11) {
-    float: left;
-    clear: right;
-}
-
-li:nth-child(n + 12) {
-    float: right;
 }
 
 p {
