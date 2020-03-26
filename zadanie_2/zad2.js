@@ -1,8 +1,12 @@
-var sum = 0;
-for (var i = 0; i < arguments.length; ++i) {
-    if (arguments[i] % 2)
-        sum += +arguments[i] + 1;
-    else
-        sum += +arguments[i] - 1;
+function specSum(args) {
+    var sum = 0;
+    for (var i = 0; i < args.length; ++i) {
+        if (args[i] % 2)
+            sum += +args[i] + 1;
+        else
+            sum += +args[i] - 1;
+    }
+    return sum;
 }
-print(sum);
+
+print(specSum(arguments));

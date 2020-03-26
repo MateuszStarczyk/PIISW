@@ -18,13 +18,15 @@ function sub1(value) {
     return +value + 1;
 }
 
-print(
-    arguments
+function specSum(args) {
+    return args
         .filter(even)
         .map(add1)
         .concat(
-            arguments
+            args
                 .filter(odd)
                 .map(sub1))
-        .reduce(add, 0)
-);
+        .reduce(add, 0);
+}
+
+print(specSum(arguments));
