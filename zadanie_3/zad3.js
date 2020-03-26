@@ -10,22 +10,22 @@ function odd(value) {
     return value % 2;
 }
 
-function add1(value) {
+function sub1(value) {
     return +value -1;
 }
 
-function sub1(value) {
+function add1(value) {
     return +value + 1;
 }
 
 function specSum(args) {
     return args
         .filter(even)
-        .map(add1)
+        .map(sub1)
         .concat(
             args
                 .filter(odd)
-                .map(sub1))
+                .map(add1))
         .reduce(add, 0);
 }
 
