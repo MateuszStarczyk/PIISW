@@ -1,6 +1,5 @@
 var accountMaker = function(spec) {
-
-    val balance = 0,
+    var balance = 0,
         number = spec.number,
         creationDate = spec.creationDate,
         currency = spec.currency;
@@ -21,9 +20,20 @@ var accountMaker = function(spec) {
             }
             this.balance += amount;
             return this.balance;
+        },
+        show: function() { console.log('balance: ' + balance + ' number: ' + number
+            + ' creationDate: ' + creationDate + ' currency: ' + currency); },
+        account: {
+            balance: balance,
+            number: number,
+            creationDate: creationDate,
+            currency: currency
         }
+
     };
 };
 
 var account = accountMaker({number: 12345678901, currency: 'PLN', creationDate: Date.now()});
 var account2 = accountMaker({number: 12345678901, currency: 'PLN', creationDate: Date.now()});
+account2.show();
+console.log(account.account);
